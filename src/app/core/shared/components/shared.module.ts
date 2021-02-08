@@ -1,21 +1,24 @@
 import { NgModule} from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'; 
 import { RouterModule } from '@angular/router';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
     imports : [
         HttpClientModule,
-        RouterModule
+        RouterModule,
+        MatTabsModule
     ],
     declarations : [
         NotFoundComponent
     ],
     exports : [
         HttpClientModule,
-        NotFoundComponent,
-        RouterModule
+        RouterModule,
+        MatTabsModule,
+        NotFoundComponent
     ],
     providers : []    
 })
@@ -24,3 +27,4 @@ export class SharedModule {
     constructor(){}
     
 }
+

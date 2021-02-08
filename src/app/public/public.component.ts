@@ -1,4 +1,3 @@
-import { NgComponentOutlet } from "@angular/common";
 import { Component, OnInit } from '@angular/core';
 
 @Component({
